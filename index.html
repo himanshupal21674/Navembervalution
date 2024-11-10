@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Posts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Blog Posts</h1>
+
+    <!-- Search and Filter Section -->
+    <div class="search-filter">
+      <input type="text" id="search-input" placeholder="Search by title...">
+      <select id="sort-select">
+        <option value="asc">Sort: Ascending</option>
+        <option value="desc">Sort: Descending</option>
+      </select>
+    </div>
+
+    <!-- Posts Container -->
+    <div id="posts-container"></div>
+
+    <!-- Pagination Controls -->
+    <div class="pagination">
+      <button id="prev-page" disabled>Previous</button>
+      <span id="page-info">Page 1</span>
+      <button id="next-page">Next</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
